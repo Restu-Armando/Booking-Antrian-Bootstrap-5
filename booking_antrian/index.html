@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Antrian</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- CSS BOOTSTRAP  -->
+    <link href="src/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet" />
+    <!-- Bootstrap DatePicker -->
+    <link rel="stylesheet" href="./css/bootstrap-datepicker.min.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Antrian</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold" id="offcanvasDarkNavbarLabel">Antrian</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body fw-semibold">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html"><i class="fa-solid fa-pen m-2"></i>Pendaftaran Antrian</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="antrian_singkat.html"><i class="fa-solid fa-notes-medical m-2"></i>Antrian Singkat</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="antrian_lengkap.html"><i class="fa-solid fa-eye m-2"></i>Antrian Lengkap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href=""><i class="fa-brands fa-whatsapp m-2"></i>Kontak Kami</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <br /><br />
+
+        <!-- Carousel -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="img/test.png" class="d-block w-100" alt="...">
+             
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/test.png" class="d-block w-100" alt="...">
+             
+            </div>
+            <div class="carousel-item">
+              <img src="img/test3.png" class="d-block w-100" alt="...">
+              
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
+        <!-- End Carousel -->
+    
+
+    <div class="container mt-5 mb-5">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <h1><strong> Pendaftaran Antrian </strong></h1>
+            <ol>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, nam! Aperiam modi exercitationem labore vel?.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, sint?</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, ducimus reiciendis.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sequi expedita consequuntur?</li>
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit.</li>
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quaerat consequuntur accusantium consectetur.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex flex-column justify-content-center">
+            <div class="card p-2" id="booking">
+              <div class="card-body">
+                
+                <form action="">
+                  <div class="mb-3">
+                    <div class="input-group input-group-md flex-nowrap">
+                      <span class="input-group-text" id="addon-wrapping"><i class="fa-regular fa-calendar"></i></span>
+                      <input type="text" id="date" class="form-control" aria-label="Tanggal" aria-describedby="addon-wrapping" />
+                      <!-- <input type="text" name="" id="date"> -->
+                    </div>
+                  </div>
+  
+                  <div class="input-group input-group-md mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01"><i class="fa-regular fa-clock"></i></label>
+                    <select class="form-select" id="inputGroupSelect01" required>
+                      <option selected>Pilih Slot Waktu</option>
+                      <option value="1">18:41 - 18:48</option>
+                      <option value="2">19:30 - 19:37</option>
+                      <option value="3">19:37 - 19:44</option>
+                      <option value="4">19:44 - 19:51</option>
+                      <option value="5">19:51 - 19:58</option>
+                      <option value="6">20:40 - 20:47</option>
+                      <option value="7">20:47 - 20:54</option>
+                      <option value="8">20:54 - 21:01</option>
+                      <option value="9">21:08 - 21:15</option>
+                      <option value="9">21:15 - 21:22</option>
+                      <option value="9">21:22 - 21:29</option>
+                      <option value="9">21:29 - 21:36</option>
+                      <option value="9">21:36 - 21:43</option>
+                      <option value="9">21:43 - 21:50</option>
+                      <option value="9">21:57 - 22:04</option>
+                      <option value="9">22:04 - 22:11</option>
+                      <option value="9">22:11 - 22:18</option>
+                      <option value="9">22:18 - 22:25</option>
+                    </select>
+                  </div>
+  
+                  <div class="mb-3">
+                    <div class="input-group input-group-md flex-nowrap">
+                      <span class="input-group-text" id="addon-wrapping"><i class="fa-regular fa-calendar"></i></span>
+                      <input type="text" class="form-control" placeholder="Umur" aria-label="Username" aria-describedby="addon-wrapping" required/>
+                    </div>
+                  </div>
+  
+                  <div class="mb-3">
+                    <div class="input-group input-group-md flex-nowrap">
+                      <span class="input-group-text" id="addon-wrapping"><i class="fa-regular fa-address-card"></i></span>
+                      <input type="text" class="form-control" placeholder="Nama Lengkap" aria-label="Username" aria-describedby="addon-wrapping" required/>
+                    </div>
+                  </div>
+  
+                  <div class="mb-3">
+                    <div class="input-group input-group-md flex-nowrap">
+                      <span class="input-group-text" id="addon-wrapping"><i class="fa-brands fa-whatsapp"></i></span>
+                      <input type="text" class="form-control" placeholder="Nomor Whatsapp" aria-label="Username" aria-describedby="addon-wrapping" required/>
+                    </div>
+                  </div>
+  
+                  <div class="input-group input-group-md mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01"><i class="fa-solid fa-info p-1"></i></label>
+                    <select class="form-select" id="inputGroupSelect01" required>
+                      <option selected>Pilih Keperluan</option>
+                      <option value="1">Kontrol Hamil</option>
+                      <option value="2">Promil</option>
+                      <option value="3">Lain - lain</option>
+                    </select>
+                  </div>
+                  <div class="d-grid gap-2 col-10 mx-auto">
+                    <button class="btn btn-info text-white" type="submit"><b>DAFTAR ANTRIAN</b></button>
+                  </div>
+                </form>
+                
+              </div>
+            </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Hero Section -->
+    <script src="src/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/e6c45a4c27.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/bootstrap-datepicker.min.js"></script>
+    <!-- My Own JS -->
+    <script src="./javascript.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* body {
+  heigth: 500px;
+} */
+
+#booking {
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 8px 8px 30px #e8e8e8, -8px -8px 30px #ffffff;
+}
+
+#center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* navbar */
+.navbar-nav .nav-link {
+  position: relative;
+  color: #fff;
+}
+
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-nav .nav-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+/* end navbar */
+
+/* offcanvas hamburger animation */
+.offcanvas {
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.6s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.offcanvas.show {
+  transform: translateX(0);
+  visibility: visible;
+  transition: transform 0.6s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.offcanvas-header {
+  background-color: dark;
+  /* border-bottom: 1px solid #e9ecef; */
+}
+
+.offcanvas-title {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0;
+}
+/* end offcanvas hamburger animation */
+/* .navbar-nav {
+  margin-top: 20px;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+} */
+
+/* start add animation */
+/* Add animation to carousel slides */
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+/* Add animation to carousel indicators */
+.carousel-indicators button {
+  transition: opacity 0.6s ease-in-out;
+}
+/* Change opacity of active indicator */
+.carousel-indicators button.active {
+  opacity: 1;
+}
+/* Change scale of carousel controls on hover */
+/* .carousel-control-prev:hover,
+.carousel-control-next:hover {
+  transform: scale(1.1);
+} */
+/* end add animation */
+
+/* CSS for transparent navbar */
+/* .navbar {
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); Safari support
+} */
+/* .navbar-transparent {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); Safari support
+} */
+/* end transparent navbar */
+
+/* CSS for transparent offcanvas menu with glass background */
+/* .offcanvas {
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); Safari support
+} */
+
+/* .offcanvas-transparent {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none; Safari support
+} */
+
+/* end transparent offcanvas */

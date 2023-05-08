@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Antrian</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="javascript.js" />
+    <!-- CSS BOOTSTRAP  -->
+    <link href="src/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Antrian</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Antrian</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html"><i class="fa-solid fa-pen m-2"></i>Pendaftaran Antrian</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="antrian_singkat.html"><i class="fa-solid fa-notes-medical m-2"></i>Antrian Singkat</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="antrian_lengkap.html"><i class="fa-solid fa-eye m-2"></i>Antrian Lengkap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href=""><i class="fa-brands fa-whatsapp m-2"></i>Kontak Kami</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Antrian</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"><i class="fa-solid fa-pen m-2"></i>Pendaftaran Antrian</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="antrian_singkat.html"><i class="fa-solid fa-notes-medical m-2"></i>Antrian Singkat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="antrian_lengkap.html"><i class="fa-solid fa-eye m-2"></i>Antrian Lengkap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href=""><i class="fa-brands fa-whatsapp m-2"></i>Kontak Kami</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <!-- END NAVBAR -->
+
+    <!-- Hero Section -->
+    <br /><br /><br />
+    <div class="container">
+      <div class="row justify-content-md-center mt-5">
+        <div class="col-lg-12">
+          <div class="card mb-4" id="booking">
+            <div class="card-body">
+              <h5 class="card-title text-center">Antrian Tanggal : <strong> Rabu, 5 April 2023 </strong></h5>
+              <table class="table fs-5">
+                <thead>
+                  <tr>
+                    <th scope="col">Inisial</th>
+                    <th scope="col">Nomor Antrian</th>
+                    <th scope="col">Slot Waktu</th>
+                    <th scope="col">Status Antrian</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Row 1, Column 1</td>
+                    <td>Row 1, Column 2</td>
+                    <td>Row 1, Column 3</td>
+                    <td>Row 1, Column 4</td>
+                  </tr>
+                  <tr>
+                    <td>Row 2, Column 1</td>
+                    <td>Row 2, Column 2</td>
+                    <td>Row 2, Column 3</td>
+                    <td>Row 2, Column 4</td>
+                  </tr>
+                  <tr>
+                    <td>Row 3, Column 1</td>
+                    <td>Row 3, Column 2</td>
+                    <td>Row 3, Column 3</td>
+                    <td>Row 3, Column 4</td>
+                  </tr>
+                  <tr>
+                    <td>Row 4, Column 1</td>
+                    <td>Row 4, Column 2</td>
+                    <td>Row 4, Column 3</td>
+                    <td>Row 4, Column 4</td>
+                  </tr>
+                  <tr>
+                    <td>Row 5, Column 1</td>
+                    <td>Row 5, Column 2</td>
+                    <td>Row 5, Column 3</td>
+                    <td>Row 5, Column 4</td>
+                  </tr>
+                  <tr>
+                    <td>Row 6, Column 1</td>
+                    <td>Row 6, Column 2</td>
+                    <td>Row 6, Column 3</td>
+                    <td>Row 6, Column 4</td>
+                  </tr>
+                  <tr>
+                    <td>Row 7, Column 1</td>
+                    <td>Row 7, Column 2</td>
+                    <td>Row 7, Column 3</td>
+                    <td>Row 7, Column 4</td>
+                  </tr>
+                  <tr>
+                    <td>Row 8, Column 1</td>
+                    <td>Row 8, Column 2</td>
+                    <td>Row 8, Column 3</td>
+                    <td>Row 8, Column 4</td>
+                  </tr>
+                  <tr>
+                    <td>Row 9, Column 1</td>
+                    <td>Row 9, Column 2</td>
+                    <td>Row 9, Column 3</td>
+                    <td>Row 9, Column 4</td>
+                  </tr>
+                  <tr>
+                    <td>Row 10, Column 1</td>
+                    <td>Row 10, Column 2</td>
+                    <td>Row 10, Column 3</td>
+                    <td>Row 10, Column 4</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Hero Section -->
+    <script src="src/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/e6c45a4c27.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+  </body>
+</html>
